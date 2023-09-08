@@ -1,12 +1,22 @@
-import logo from './assets/logo.png'
+import Navmenu from "./components/Navmenu";
+import Home from "./components/Home";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import logo from "./assets/logo.png";
+import { useAnimation } from "framer-motion";
+import { useState } from "react";
+
 function App() {
+  const [location, setLocation] = useState(1);
+  const controls = useAnimation();
   return (
-    <div className="up-cont">
-      <div className="name-title">
-        {/* <img src={logo} alt="logo.svg" width={50} height={50} /> */}
-        <h2>Omar Gonzalez</h2>
-      </div>
-    </div>
+    <>
+      <img id="logo-main" src={logo} alt="logo.svg" />
+      <Navmenu setLocation={setLocation} controls={controls} />
+      {location == 1 ? <Home controls={controls} /> : null}
+      {location == 2 ? <Projects controls={controls} /> : null}
+      {location == 3 ? <Contact controls={controls} /> : null}
+    </>
   );
 }
 

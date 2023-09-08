@@ -1,14 +1,95 @@
 .name-title {
-  display: flex;
-  height: 300px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding-left: 20px;
+  position: fixed;
+  top: 10px;
+  left: 20px;
   h2 {
     width: 100px;
+    font-weight: lighter;
     font-size: 70px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serif;
   }
+}
+.navigator-menu-cont {
+  position: fixed;
+  top: 250px;
+  width: 320px;
+  height: 50px;
+  background-color: white;
+  padding: 0;
+  color: black;
+  z-index: 100;
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    li {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+}
+#logo-main {
+  opacity: 0.5;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 75px;
+  height: 75px;
+  transition: 0.5s ease;
+  &:hover {
+    opacity: 1;
+  }
+}
+.info-cont {
+  position: fixed;
+  right: 25px;
+  bottom: 5px;
+  width: 120px;
+  z-index: 1;
+  transition: 0.5s ease;
+  p {
+    font-size: 15px;
+    font-weight: normal;
+    text-align: right;
+    opacity: 0.7;
+  }
+  &:hover {
+    font-weight: normal;
+  }
+}
+.social-icons-cont {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  #Icon {
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+.square-active {
+  width: 15px;
+  height: 15px;
+  border: 1px solid black;
+  margin: 0;
+  padding: 0;
+  background: black;
+  margin-right: 3px;
+  transition: 0.5s ease;
+}
+
+.square-inactive {
+  width: 15px;
+  height: 15px;
+  border: 1px solid black;
+  margin: 0;
+  padding: 0;
+  background: none;
+  margin-right: 3px;
+  transition: 0.5s ease;
 }
