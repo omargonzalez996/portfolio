@@ -1,6 +1,7 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 import { motion, AnimatePresence } from "framer-motion";
+import yo from '../assets/yo.jpg'
 function Home({ controls }) {
   return (
     <>
@@ -12,6 +13,9 @@ function Home({ controls }) {
           <div className="social-icons-cont">
             <Icon id="Icon" icon="formkit:twitter" color="white" />
             <Icon id="Icon" icon="bi:github" color="white" />
+          </div>
+          <div className="yomero-container"> 
+              <img src={yo} alt="yomero.jpg" />
           </div>
           <div className="info-cont">
             <p>
