@@ -1,4 +1,6 @@
-@import "./styles/style";
+@import "./styles/Home.style.scss";
+@import "./styles/Projects.style.scss";
+
 * {
   margin: none;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -16,12 +18,16 @@
 }
 
 #particles-js {
-  background: #202020;
+  background-color: black;
   position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
   z-index: -1;
+}
+
+a {
+  text-decoration: none;
 }
 
 html {
@@ -30,9 +36,6 @@ html {
   margin: none;
 }
 body {
-  // position: fixed;
-  // top: 0;
-  // left: 0;
   margin: none;
   display: block;
   justify-content: center;
