@@ -4,18 +4,48 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import logo from "./assets/logo.png";
 import { useAnimation } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import contentEs from "./constants/contentES.json";
+import contentEn from "./constants/contentEN.json";
+import LanguajeSelector from "./components/LanguajeSelector";
 
 function App() {
   const [location, setLocation] = useState(1);
+  const [content, setContent] = useState(contentEn);
+  const [languaje, setLanguaje] = useState(1);
   const controls = useAnimation();
+
+  useEffect(() => {
+    changeLanguaje(languaje);
+  }, [languaje]);
+
+  const changeLanguaje = (option) => {
+    if (option == 1) {
+      setContent(contentEn);
+    }
+    if (option == 2) {
+      setContent(contentEs);
+    }
+  };
+
   return (
     <>
+      <LanguajeSelector languaje={languaje} setLanguaje={setLanguaje} />
       <img id="logo-main" src={logo} alt="logo.svg" />
-      <Navmenu setLocation={setLocation} controls={controls} />
-      {location == 1 ? <Home controls={controls} /> : null}
-      {location == 2 ? <Projects controls={controls} /> : null}
-      {location == 3 ? <Contact controls={controls} /> : null}
+      <Navmenu
+        content={content.NAV}
+        setLocation={setLocation}
+        controls={controls}
+      />
+      {location == 1 ? (
+        <Home content={content.HOME} controls={controls} />
+      ) : null}
+      {location == 2 ? (
+        <Projects content={content.PROJECTS} controls={controls} />
+      ) : null}
+      {location == 3 ? (
+        <Contact content={content.CONTACT} controls={controls} />
+      ) : null}
     </>
   );
 }

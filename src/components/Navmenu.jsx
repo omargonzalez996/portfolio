@@ -2,7 +2,7 @@ import React from "react";
 import Square from "./square";
 import { useEffect, useState } from "react";
 
-function Navmenu({ setLocation, controls }) {
+function Navmenu({ content, setLocation, controls }) {
   const [HomeActive, setHomeActive] = useState(false);
   const [ProjActive, setProjActive] = useState(false);
   const [ContactActive, setContactActive] = useState(false);
@@ -34,21 +34,22 @@ function Navmenu({ setLocation, controls }) {
   useEffect(() => {
     setHomeActive(true);
   }, []);
+  
   return (
     <>
       <div className="navigator-menu-cont">
         <ul>
           <li onClick={() => navSelect(1)}>
             <Square active={HomeActive} />
-            Home
+            {content.home}
           </li>
           <li onClick={() => navSelect(2)}>
             <Square active={ProjActive} />
-            Projects
+            {content.projects}
           </li>
           <li onClick={() => navSelect(3)}>
             <Square active={ContactActive} />
-            Contact
+            {content.contact}
           </li>
         </ul>
       </div>

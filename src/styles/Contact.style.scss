@@ -1,0 +1,91 @@
+.contact-frame {
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  display: flex;
+  width: 80%;
+  max-width: 700px;
+  height: 50%;
+  padding: 0;
+  .contact-email {
+    .icon-mail {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    //left container
+    width: 60%;
+    form {
+      padding: 20px 30px 20px 20px;
+      display: block;
+      input {
+        background-color: white;
+        border: 1px solid black;
+        height: 25px;
+        color: black;
+        margin-bottom: 30px;
+        padding: 5px;
+        width: 100%;
+        transition: 0.5s ease;
+        &:focus {
+          outline: none;
+          filter: invert(1);
+        }
+      }
+      textarea {
+        background-color: white;
+        border: 1px solid black;
+        resize: none;
+        width: 100%;
+        color: black;
+        padding: 5px;
+        transition: 0.5s ease;
+        margin-bottom: 20px;
+        &:focus {
+          outline: none;
+          filter: invert(1);
+        }
+      }
+      button {
+        margin-left: 50%;
+        transform: translateX(-50%);
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+        height: 30px;
+        width: 100px;
+        transition: 0.5s ease;
+        &:hover {
+          filter: invert(1);
+        }
+        &:focus {
+          outline: none;
+          filter: invert(1);
+        }
+      }
+    }
+  }
+  .contact-detail {
+    //right container
+    width: 40%;
+    background-color: black;
+    color: white;
+    h3 {
+      font-size: 20px;
+      font-weight: lighter;
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+    .social-cont {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        .social-icon {
+            margin: 15px;
+        }
+    }
+  }
+}

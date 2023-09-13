@@ -1,0 +1,27 @@
+{
+  "NAV": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "HOME": {
+    "homeTitle": "Inicio",
+    "homeName": "Omar González",
+    "homeDetail": "Ingeniero en Tics",
+    "homeDesc": "Trabajo como desarrollador de software a tiempo completo, principalmente en proyectos Javascript y Node.js. Tengo una licenciatura en Información y Comunicación ITESS y tengo conocimientos en desarrollo web, programación programación orientada a objetos y bases de datos relacionales."
+  },
+  "PROJECTS": {
+    "projectTitle": "Proyectos",
+    "p1Title": "Lading page - Fisioterapia RO",
+    "p1Desc": "Landing page simple creada con typescript, react y firebase",
+    "p1GitLink": "https://github.com/omargonzalez996/LPBlanca",
+    "p1Link": "https://fisioterapiaro.com"
+  },
+  "CONTACT": {
+    "contactTitle": "Contacto",
+    "placeHolderSubject": "Asunto",
+    "placeHolderMessage": "Mensaje",
+    "sendButtonText": "Enviar",
+    "contactSocialLogo": "Ponte en contacto!"
+  }
+}

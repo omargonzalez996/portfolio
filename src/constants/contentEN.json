@@ -1,0 +1,27 @@
+{
+  "NAV": {
+    "home": "Home",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "HOME": {
+    "homeTitle": "Home",
+    "homeName": "Omar González",
+    "homeDetail": "CT Engineer",
+    "homeDesc": "I work as a full time software developer, mainly in Javascript and Node.js projects. I have a degree in Information and Communication Technology Engineering from ITESS and I have knowledge in web development, object oriented programming and relational databases."
+  },
+  "PROJECTS": {
+    "projectTitle": "Projects",
+    "p1Title": "Fisioterapia - RO landing page",
+    "p1Desc": " Simple landing page for physiotherapy services created using typescript, react and firebase.",
+    "p1GitLink": "https://github.com/omargonzalez996/LPBlanca",
+    "p1Link": "https://fisioterapiaro.com"
+  },
+  "CONTACT": {
+    "contactTitle": "Contact",
+    "placeHolderSubject": "Subject",
+    "placeHolderMessage": "Message",
+    "sendButtonText": "Send",
+    "contactSocialLogo": "Get in touch!"
+  }
+}
