@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import contentEs from "./constants/contentES.json";
 import contentEn from "./constants/contentEN.json";
 import LanguajeSelector from "./components/LanguajeSelector";
+import backVideo from "./assets/bvid.mp4";
 
 function App() {
   const [location, setLocation] = useState(1);
@@ -30,6 +31,7 @@ function App() {
 
   return (
     <>
+      <video src={backVideo} autoPlay loop muted/>
       <LanguajeSelector languaje={languaje} setLanguaje={setLanguaje} />
       <img id="logo-main" src={logo} alt="logo.svg" />
       <Navmenu

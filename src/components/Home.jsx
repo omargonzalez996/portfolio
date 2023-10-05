@@ -1,6 +1,6 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import yo from "../assets/nean.jpg";
+import yo from "../assets/ppic.png";
 function Home({ content, controls }) {
   return (
     <>

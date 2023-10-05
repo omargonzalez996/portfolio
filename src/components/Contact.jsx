@@ -28,30 +28,38 @@ function Contact({ content, controls }) {
             <div className="contact-detail">
               <h3>{content.contactSocialLogo}</h3>
               <div className="social-cont">
-                <Icon
-                  className="social-icon"
-                  icon="bi:github"
-                  color="white"
-                  width={50}
-                />
-                <Icon
-                  className="social-icon"
-                  icon="bi:linkedin"
-                  color="white"
-                  width={50}
-                />
-                <Icon
-                  className="social-icon"
-                  icon="uim:whatsapp"
-                  color="white"
-                  width={60}
-                />
-                <Icon
-                  className="social-icon"
-                  icon="fontisto:discord"
-                  color="white"
-                  width={50}
-                />
+                <a href="https://github.com/omargonzalez996">
+                  <Icon
+                    className="social-icon"
+                    icon="bi:github"
+                    color="white"
+                    width={50}
+                  />
+                </a>
+                <a href="https://www.linkedin.com/in/luis-omar-gonzález-garcía-0853b5257/">
+                  <Icon
+                    className="social-icon"
+                    icon="bi:linkedin"
+                    color="white"
+                    width={50}
+                  />
+                </a>
+                <a href="https://wa.me/524661010252">
+                  <Icon
+                    className="social-icon"
+                    icon="uim:whatsapp"
+                    color="white"
+                    width={60}
+                  />
+                </a>
+                <a href="https://discordapp.com/users/220285666292924417">
+                  <Icon
+                    className="social-icon"
+                    icon="fontisto:discord"
+                    color="white"
+                    width={50}
+                  />
+                </a>
               </div>
             </div>
           </div>
